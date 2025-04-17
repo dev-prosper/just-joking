@@ -1,0 +1,81 @@
+/* 
+for mobile phones:  < 640px
+for tablets: 640px --- 768px (small tablets)
+             768px --- 1024px (big tablets)
+for laptops: 1024px --- 1280px
+for desktops and large screens: 1280px ~~~~ infinity 
+*/
+
+/* Screens from 769px  --- 1024px  */
+@media screen and (max-width: 1230px) {
+  #text-container h1 {
+    font-size: 52px;
+  }
+  #text-container p {
+    width: 100%;
+  }
+  #img-container {
+    width: 480px;
+    height: 300px;
+  }
+
+  #table-ctn {
+    gap: 120px;
+  }
+  #table-ctn > div {
+    width: 280px;
+    height: 252px;
+  }
+}
+
+/* Screens from 541px  --- 768px */
+@media screen and (max-width: 980px) {
+  #table-ctn > div {
+    display: none;
+  }
+  .px-100 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+  }
+}
+
+/* Screens from 0px  --- 540px */
+@media screen and (max-width: 870px) {
+  #hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+  }
+  #teachers-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #footer-ctn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #img-container {
+    width: 80%;
+    height: 300px;
+  }
+  .px-100 {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+  }
+  table {
+    width: 100%;
+  }
+  th,
+  td {
+    padding: 4px;
+  }
+  #footer-ctn > div:nth-of-type(2) {
+    font-size: 14px;
+  }
+}
